@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+font-family : "Platypi", serif;
+list-style: none;
+box-sizing: border-box;
+}
+:root{
+	--textcolor:#2e5984;
+	--labelcolor:#5F9EA0;
+}
+h5{
+	color: var(--textcolor);
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2rem;
+}
+body{
+	background-image: url('img/back1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.formsec,
+.loginsec{
+	width: 70%;
+	border-radius: 10px;
+	align-items: center;
+	background-color: whitesmoke;
+	margin: auto;
+	padding: auto;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img{
+	width: 100%;
+	min-height: 490px;
+}
+.form-control{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid lightblue;
+}
+label{
+	color: var(--labelcolor);
+	font-size: 1.125rem;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.form-check-input{
+	background-color: var(--labelcolor);
+}
+.btn-primary{
+	color: var(--textcolor);
+	font-size: 1.5rem;
+	font-weight: 600;
+	border-radius: 10px;
+	background-color: transparent;
+	border: none;
+}
+.btn-primary:hover{
+	background-color: var(--labelcolor);
+	transition: .2s all ease-in-out;
+}
+input.invalid{
+  background-color:whitesmoke;
+  color: whitesmoke;
+  border-color: red;
+
+}
+.invalid input:required:invalid {
+  background: #BE4C54;
+}
+.invalid input:required:valid {
+  background: #17D654;
+}
+.invalid-feedback {
+    color: #ff606e;
+}
+ 
+input.valid{
+	 
+    border-color: #2acc80;
+}
+#errorMessages1,
+#errorMessages2,
+#errorMessages3,
+#errorMessages4,
+#errorMessages5{
+	font-size: 1rem;
+	font-weight: 500;
+	color:var(--textcolor);
+	text-transform: capitalize;
+	background-color: var(--labelcolor);
+	border-radius: 5px;
+}
+.btn-sec{
+	color: var(--textcolor);
+	font-size: 1.5rem;
+	font-weight: 600;
+	border-radius: 10px;
+	background-color: whitesmoke;
+	border:2px solid var(--textcolor);
+
+}
+#login{
+	display: none;
+}
+#login .active{
+	display: block;
+}
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.password-toggle-icon i {
+  font-size: 20px;
+  line-height: 1;
+  color:#4070f4;;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.password-toggle-icon i:hover {
+  color: #000;
+}
